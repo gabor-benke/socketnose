@@ -1,0 +1,41 @@
+/* SUMMARY */
+
+.summary-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto 40px auto;
+  padding: 20px 20px 0 20px;  
+  border: 1px solid rgb(73, 167, 57);
+  border-radius: 8px;
+  background-color: rgb(73, 167, 57);
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  overflow: auto; 
+}
+
+.summary-header {
+  text-align: center;
+  margin: 0 0 20px 0;
+  color: rgb(255, 230, 157);
+  font-family: "Yeseva One", sans-serif;
+  font-size: 2em;
+}
+
+.summary-table {
+  width: 100%;
+  display: table;
+  text-align: center;
+  border-collapse: collapse;
+  color: rgb(255, 230, 157);
+  font-family: "Inter", sans-serif;
+}
+
+.summary-thead {
+  font-weight: bold;
+}
+
+.summary-tbody tr:nth-child(even) {
+  background-color: rgba(255, 230, 157, 0.1);
+}

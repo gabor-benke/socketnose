@@ -1,0 +1,21 @@
+/* SUBMIT BUTTON */
+
+.submit-button {
+  background-color: rgb(255, 230, 157);
+  color: rgb(73, 167, 57);
+  font-family: "Inter", sans-serif;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto 20px auto;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  justify-self: center;
+}
+
+.submit-button:hover {
+  background-color: rgb(255, 245, 200);
+  cursor: pointer;
+  transition: all 0.5s linear;
+}
