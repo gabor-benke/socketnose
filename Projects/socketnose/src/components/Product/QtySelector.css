@@ -1,0 +1,34 @@
+/* QTYSELECTOR */
+
+.qty-selector {
+	display: flex;
+	align-items: center;
+	gap: 2px;
+}
+
+.decrease-button, .increase-button {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: rgb(247, 232, 186);
+  border-radius: 5px;
+  background-color: rgb(74, 48, 10);
+  border: 1px solid rgb(74, 48, 10);
+  cursor: pointer;
+}
+
+.decrease-button:hover, .increase-button:hover {
+	background-color: rgb(138, 105, 50);
+	border: 1px solid rgb(138, 105, 50);
+}
+
+.quantity-input {
+	width: 100px;
+	height: 27px;
+	font-size: 1em;
+	text-align: center;
+	color: rgb(74, 48, 10);
+	background-color: rgb(247, 232, 186);
+	border: 1px solid rgb(74, 48, 10);
+	border-radius: 5px;
+}

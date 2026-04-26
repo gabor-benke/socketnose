@@ -1,0 +1,83 @@
+/* HOME */
+
+.home-container {
+  width: 100%;
+  margin-top: 190px;
+  font-family: "Inter", sans-serif;
+}
+
+/* WELCOME BANNER */
+
+.welcome-h1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: rgb(211, 86, 93);
+  font-size: 4em;
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.welcome-h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: rgb(74, 48, 10);
+  font-size: 2.5em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+/* BENKE FAMILY */
+
+.benke-family {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: left;
+  justify-items: left;
+  background-color: rgb(74, 48, 10);
+  padding: 0 200px 0 80px;
+}
+
+.benke-family h3 {
+  font-family: "Yeseva One", sans-serif;
+  color: rgb(138, 105, 50);
+  font-weight: 500;
+  font-size: 2.5em;
+  margin: 40px 0 40px 0;  
+}
+
+.benke-family p {
+  color: rgb(247, 232, 186);
+  font-size: 1.75em;
+  font-weight: 500;
+  margin: 0 0 60px 0;
+}
+
+/* ABOUT SOCKETNOSE */
+
+.about-socketnose {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: left;
+  justify-items: left;
+  background-color: rgb(247, 232, 186);
+  padding: 0 200px 0 80px;
+}
+
+.about-socketnose h3 {
+  color: rgb(211, 86, 93);
+  font-family: "Special Elite", sans-serif;
+  font-weight: 700;
+  font-size: 2.5em;
+  margin: 40px 0 40px 0; 
+}
+
+.about-socketnose p {
+  color: rgb(74, 48, 10);
+  font-size: 1.75em;
+  font-weight: 500;
+  margin: 0 0 60px 0;
+}

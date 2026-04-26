@@ -1,0 +1,45 @@
+/* MY ORDERS */
+
+.my-orders-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.my-orders-title {
+  width: 100%;
+  margin: 190px 200px 50px 80px;
+  color: rgb(138, 105, 50);
+  font-family: "Yeseva One", sans-serif;
+  font-size: 2.5em;
+}
+
+.my-orders-table {
+  color: rgb(74, 48, 10);
+  width: 80%;
+  display: table;
+  text-align: center;
+  margin: 0 auto auto 80px;
+  font-family: "Inter", sans-serif;
+  border-collapse: collapse;
+  border-style: hidden;
+  border-radius: 8px;
+  border: 1px solid rgb(74, 48, 10);
+}
+
+.my-orders-thead th {
+  color: rgb(211, 86, 93);
+  font-weight: bold;
+  font-family: "Special Elite", sans-serif;
+  font-size: 1.2em;
+  padding: 0.5rem;
+  border: 1px solid rgb(74, 48, 10);
+}
+
+.my-orders-tbody td {
+  padding: 0.5rem;
+  border: 1px solid rgb(74, 48, 10);
+}
+
+.my-orders-tbody tr:nth-child(odd) {
+  background-color: rgba(74, 48, 10, 0.1);
+}

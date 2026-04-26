@@ -1,0 +1,97 @@
+Socketnose
+====================
+
+1. Technologies:
+Front-End: React, HTML, Sass/Tailwind CSS, React-Redux, React-Router
+Back-End: Node/Express
+Database: PostreSQL
+Testing: Jest (React)
+Version Control: Git & GitHub
+Authorization: OAuth 2.0 (Google)
+
+2. Website Layout (Menu):
+
+Home (Introduction) - socketnose.eu/ or socketnose.eu/home
+- Welcome
+- Story of Socketnose
+
+Products - socketnose.eu/products
+- Few words about placing orders
+- Product Box (Picture, Name, Unit Price, Qty (adjustable), Save/Delete)
+- Putting products into a basket, which will appear in My Orders page...
+
+My Orders (visible and editable only after login) - socketnose.eu/my-orders
+- Hello, [name (nickname)],
+- Orders as a list with Change-button 
+- Change-button will redirect to /products to be able to edit (???)
+- Finalized order will be activated through Send-button and admin will receive it in orders.db
+- Admin role: will be able to amend submitted order
+- After finalizing the order My Orders will be blank again with notice: in case of any changes, please contact the admin
+
+Contacts
+- User should contact Socketnose in order to amend the order
+
+Login (own + Google OAuth)
+- Site's own registration: inserting data into CUSTOMERS table.
+- Site's Google OAuth login: under checking...
+- Username will be greeted in the right top corner
+- Admin and User role needed
+
+---
+
+3. Database
+
+Table 1 - CUSTOMERS (id, name, address, phone, email)
+Table 2 - PRODUCTS (id, name, unit_price)
+Table 3 - ORDERS (id, customer_id, product_id, product_name, quantity, price, date, status)
+
+---
+
+4. React Components:
+
+Products:
+- Product (image, name, unit_price, product_id, form for quantity, +/- buttons with 0.5 steps)
+- ProductList (list of Products)
+- Summary (product_id, product_name, unit_price, quantity, price)
+- Submit (submitting Summary to the My Orders page)
+
+My Orders:
+- fetching Orders table (id, customer_id, product_id, product_name, quantity, price, date)
+- ability to filter columns on any keys
+
+---
+
+5. Task List:
+
+ADDING FUNCTIONS TO THE APP:
+
+SHORT TERM TASKS:
+
+- red * fields for compulsory fields (SignUp.js)
+- backend: registered user validation (mail must be unique)
+- settings of SignIn.js 
+- creating a greeting when user is signed in (and a Logout component)
+- placing mock orders and adding the customer to MyOrders.js
+
+
+- Adding orders(id) to each product on My Orders page so that the id will be the same to each row which were submitted from Summary (Products)
+- Adding customers(name) to My Orders page
+- Adding orders(status) to My Orders page. (defined status (new, in process, ready), only admins could handle it) 
+- Checking the possibilities of sending a mail to the user once the order is ready
+- Checking the possibility to set a pivot to all the columns of the Orders table (My Orders page)
+- Creating a sign-up page (forms) for Login
+- Creating a login page (forms) for Login
+- Checking how does OAuth work (also the possibility for third-party (e.g.: Google) logins)
+- Defining roles for mock users (admin, operator (to be checked if necessary) and users)
+- Checking the possibilities to download and print the order of a user in PDF++
+
+DESIGN:
+
+- Design a logo and choosing the color themes and fonts for the entire app
+
+* Fonts (logo): Comfortaa*
+* Fonts (text): Parkinsans
+* Fonts (text): Inter
+* Color (background): rgb(255, 230, 157)
+* Color (logo): rgb(211, 86, 93)
+* Color (text): rgb(74, 48, 10); rgb(143, 124, 49)
